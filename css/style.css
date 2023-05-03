@@ -10,8 +10,8 @@ body{
 
 .row{
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
-    color: white;
 }
 
 button {
@@ -19,6 +19,12 @@ button {
     border-radius: 20px;
     padding: 10px 15px;
     font-family: inherit;
+}
+
+.container{
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
 }
 
 /* nav */
@@ -29,13 +35,8 @@ nav{
     top: 0;
     width: 100%;
     background-color: #0084fd;
+    color: white;
     
-}
-
-nav .container{
-    width: 100%;
-    max-width: 750px;
-    margin: 0 auto;
 }
 
 nav .row{
@@ -53,26 +54,109 @@ nav .row>.col{
     display: none;
 }
 
-/* tablet */
+/* section advantages */
+
+#advantages{
+    margin-top: 80px;
+    width: 100%;
+}
+
+#advantages .col-33, #advantages .col-66{
+    background-color: #b5ddff;
+    margin: 25px auto;
+    width: calc(100% - 50px);
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+
+#advantages .col-66{
+    padding-bottom: 0;
+}
+
+#advantages .col-33{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#advantages .content-left, .content-right, #advantages .contents{
+    width: 100%;
+}
+
+#advantages .content-right>img{
+    width: 75%;   
+    margin: 0 auto;
+}
+
+.content-right{
+    display: flex;
+    justify-content: center;
+}
+
+#advantages p{
+    color:#5c7082;
+    margin: 30px auto;
+}
+
+#advantages .col-33 p{
+    text-align: center;
+}
+
+#advantages .col-33 i{
+    font-size: 70px;
+}
+
+#advantages h2,#advantages .col-33>i{
+    color: #0084fd;
+    margin: 30px 0 0 0;
+}
+
+#advantages button{
+    color: white;
+    background-color: #0084fd;
+    padding: 7px 30px;
+}
+
+/*******************
+ tablet 
+ ******************/
 
 @media screen and (min-width:768px){
+
+    /* nav */
 
     nav .container{
         max-width: 920px;
     }
 
+    /* section advantages */
+
+    #advantages .col-66{
+        width: calc(200% / 3 - 50px);
+    }
+
+    #advantages .col-33{
+        width: calc(100% / 3 - 50px);
+    }
+
+    
 
 }
 
-/* desktop */
+/****************** 
+desktop 
+******************/
 
 @media screen and (min-width:991px){
 
-    nav .container{
+    .container{
         width: 80%;
         max-width: 1200px;
         margin: 0 auto;
     }
+
+
+    /* nav */
 
     .hamburger{
         display: none;
@@ -97,13 +181,38 @@ nav .row>.col{
     .desktop-menu ul li:last-child{
         padding-right: 0;
     }
+
+    /* advantages section */
+
+    #advantages .contents{
+        display: flex;
+        align-items: flex-start;
+        height: 100%;
+    }
+
+    #advantages .content-left,#advantages .content-right{
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    #advantages .content-right{
+        align-self: flex-end;
+    }
+
+    #advantages .col-66{
+        position: relative;
+    }
 }
 
-/* large desktop */
+/******************** 
+large desktop 
+*********************/
 
 @media screen and (min-width:1200px){
     
-    nav .container{
+    /* nav */
+
+    .container{
         width: 80%;
         max-width: 1290px;
         margin: 0 auto;
