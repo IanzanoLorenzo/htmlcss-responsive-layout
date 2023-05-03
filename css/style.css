@@ -22,13 +22,14 @@ button {
 }
 
 .container{
-    width: 85%;
+    width: 90%;
     max-width: 750px;
     margin: 0 auto;
 }
 
 .card{
     border-radius: 20px;
+    margin:15px;
 }
 
 /* testo */
@@ -87,7 +88,7 @@ nav a:hover{
 #advantages .col-33, #advantages .col-66{
     background-color: #b5ddff;
     margin: 25px auto;
-    width: calc(100%);
+    width: calc(100% - 30px);
     padding: 10px 15px;
 }
 
@@ -146,7 +147,8 @@ nav a:hover{
 }
 
 #planning .col-50{
-    width: 100%;
+    width: calc(100% - 30px);
+    margin: 0 auto;
     padding: 30px 0;
 }
 
@@ -217,6 +219,7 @@ nav a:hover{
     padding: 25px 15px;
     color: white;
     margin: 20px 0;
+    width: calc(100% - 30px);
 }
 
 #testimonial-1{
@@ -243,17 +246,48 @@ nav a:hover{
     margin-left: 5px;
 }
 
+/* section features */
+
+#features{
+    width: 100%;
+    margin-top: 80px;
+    padding: 50px 0;
+    background-color: #9593e6;
+    color: white;
+}
+
+#features .col-33.card{
+    background-color: white;
+    color: black;
+    padding: 40px 15px;
+}
+
+#features .col-33.card h2{
+    font-size: 40px;
+}
+
+#features button{
+    padding: 7px 30px;
+    color: white;
+    background-color: #9593e6;
+    font-weight: 800;
+    margin-top: 30px;
+}
+
+#features .col-33.card h2,#features .col-33.card h4{
+    color: #9593e6;
+    margin-bottom: 30px;
+}
+
 /*******************
  tablet 
  ******************/
 
 @media screen and (min-width:768px){
 
-    /* nav */
-
-    nav .container{
+    .container{
         width: 100%;
-        max-width: 920px;
+        max-width: 900px;
     }
 
     /* section advantages */
@@ -279,7 +313,18 @@ nav a:hover{
 
     #testimonial .col.card .text-center{
         text-align: left;
-    }    
+    }
+
+    /* section features */
+
+    #features .col{
+        width: calc(100% - 30px);
+    }
+
+    #features .col-33.card{
+        width: calc(100% / 2 - 30px);
+    }
+
 }
 
 /****************** 
@@ -289,7 +334,7 @@ desktop
 @media screen and (min-width:991px){
 
     .container{
-        width: 80%;
+        width: 85%;
         max-width: 1200px;
         margin: 0 auto;
     }
@@ -359,6 +404,12 @@ desktop
     #planning .col-50:nth-child(2){
         width: calc(50% - 60px);
         margin: 30px;
+    }
+
+    /* section features */
+
+    #features .col-33.card{
+        width: calc(100% / 3 - 30px);
     }
 
 }
