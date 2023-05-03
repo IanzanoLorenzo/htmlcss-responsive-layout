@@ -27,6 +27,20 @@ button {
     margin: 0 auto;
 }
 
+.card{
+    border-radius: 20px;
+}
+
+/* testo */
+
+.text-center{
+    text-align: center;
+}
+
+h2 {
+    font-size: 30px;
+}
+
 /* nav */
 
 nav{
@@ -59,6 +73,10 @@ nav a{
     color: inherit;
 }
 
+nav a:hover{
+    text-decoration: underline;
+}
+
 /* section advantages */
 
 #advantages{
@@ -71,7 +89,6 @@ nav a{
     margin: 25px auto;
     width: calc(100%);
     padding: 10px 15px;
-    border-radius: 20px;
 }
 
 #advantages .col-66{
@@ -103,15 +120,11 @@ nav a{
     margin: 30px auto;
 }
 
-#advantages .col-33 p{
-    text-align: center;
-}
-
 #advantages .col-33 i{
     font-size: 70px;
 }
 
-#advantages h2,#advantages .col-33>i{
+#advantages h3,#advantages .col-33>i{
     color: #0084fd;
     margin: 30px 0 0 0;
 }
@@ -143,7 +156,6 @@ nav a{
 }
 
 #planning h2 {
-    font-size: 30px;
     margin: 30px 0;
 }
 
@@ -155,7 +167,6 @@ nav a{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border-radius: 20px;
 }
 
 #planning .col-50:nth-child(2) img{
@@ -163,13 +174,73 @@ nav a{
     margin-bottom: 30px;
 }
 
-#planning .col-50:nth-child(2) p{
-    text-align: center;
-}
-
 #planning button{
     background-color: #9593e6;
     margin-top: 30px;
+}
+
+/* testimonials */
+
+#testimonial{
+    margin-top: 40px;
+    width: 100%;
+}
+
+#testimonial .row{
+    flex-direction: column;
+    align-items: center;
+}
+
+#testimonial h2{
+    font-size: 30px;
+    color: #9593e6;
+    margin-top: 50px;
+}
+
+#testimonial p{
+    margin: 30px auto;
+}
+
+.img-testimonial{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-position-x: center;
+    background-size: cover;
+}
+
+#testimonial .col.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #9593e6;
+    padding: 25px 15px;
+    color: white;
+    margin: 20px 0;
+}
+
+#testimonial-1{
+    background-image: url(../img/testimonial1.jpg);
+}
+
+#testimonial-2{
+    background-image: url(../img/testimonial2.jpg);
+}
+
+#testimonial-3{
+    background-image: url(../img/testimonial3.jpg);
+}
+
+#testimonial .fa-quote-left{
+    position: relative;
+    bottom: 5px;
+    margin-right: 5px;
+}
+
+#testimonial .fa-quote-right{
+    position: relative;
+    top: 5px;
+    margin-left: 5px;
 }
 
 /*******************
@@ -195,8 +266,20 @@ nav a{
         width: calc(100% / 3 - 30px);
     }
 
+    /* section testimonials */
     
+    #testimonial .col.card{
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
+    #testimonial .col.card .descr-testimonial{
+        width: calc(100% - 170px);
+    }
+
+    #testimonial .col.card .text-center{
+        text-align: left;
+    }    
 }
 
 /****************** 
