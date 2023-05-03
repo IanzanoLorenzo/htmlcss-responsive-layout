@@ -22,7 +22,7 @@ button {
 }
 
 .container{
-    width: 100%;
+    width: 85%;
     max-width: 750px;
     margin: 0 auto;
 }
@@ -36,7 +36,7 @@ nav{
     width: 100%;
     background-color: #0084fd;
     color: white;
-    
+    z-index: 20;
 }
 
 nav .row{
@@ -54,6 +54,11 @@ nav .row>.col{
     display: none;
 }
 
+nav a{
+    text-decoration: none;
+    color: inherit;
+}
+
 /* section advantages */
 
 #advantages{
@@ -64,7 +69,7 @@ nav .row>.col{
 #advantages .col-33, #advantages .col-66{
     background-color: #b5ddff;
     margin: 25px auto;
-    width: calc(100% - 50px);
+    width: calc(100%);
     padding: 10px 15px;
     border-radius: 20px;
 }
@@ -117,6 +122,56 @@ nav .row>.col{
     padding: 7px 30px;
 }
 
+/* planning section */
+
+#planning{
+    width: 100%;
+    background-color: #9593e6;
+    color: white;
+    margin-top: 80px;
+    padding: 80px 0;
+}
+
+#planning .col-50{
+    width: 100%;
+    padding: 30px 0;
+}
+
+#planning .col-50>img{
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+#planning h2 {
+    font-size: 30px;
+    margin: 30px 0;
+}
+
+#planning .col-50:nth-child(2) {
+    background-color: white;
+    color: black;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+#planning .col-50:nth-child(2) img{
+    width: 70%;
+    margin-bottom: 30px;
+}
+
+#planning .col-50:nth-child(2) p{
+    text-align: center;
+}
+
+#planning button{
+    background-color: #9593e6;
+    margin-top: 30px;
+}
+
 /*******************
  tablet 
  ******************/
@@ -126,17 +181,18 @@ nav .row>.col{
     /* nav */
 
     nav .container{
+        width: 100%;
         max-width: 920px;
     }
 
     /* section advantages */
 
     #advantages .col-66{
-        width: calc(200% / 3 - 50px);
+        width: calc(200% / 3 - 30px);
     }
 
     #advantages .col-33{
-        width: calc(100% / 3 - 50px);
+        width: calc(100% / 3 - 30px);
     }
 
     
@@ -202,6 +258,26 @@ desktop
     #advantages .col-66{
         position: relative;
     }
+
+    /* planning */
+
+    #planning .container{
+        width: 60%;
+    }
+
+    #planning .row{
+        align-items: flex-end;
+    }
+
+    #planning .col-50{
+        width: 50%;
+    }
+
+    #planning .col-50:nth-child(2){
+        width: calc(50% - 60px);
+        margin: 30px;
+    }
+
 }
 
 /******************** 
