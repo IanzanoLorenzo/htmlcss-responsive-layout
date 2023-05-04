@@ -32,6 +32,14 @@ button {
     margin:15px;
 }
 
+button.viola{
+    padding: 7px 30px;
+    color: white;
+    background-color: #9593e6;
+    font-weight: 800;
+    margin-top: 30px;
+}
+
 /* testo */
 
 .text-center{
@@ -203,7 +211,7 @@ nav a:hover{
     margin: 30px auto;
 }
 
-.img-testimonial{
+.img-profile{
     height: 150px;
     width: 150px;
     border-radius: 50%;
@@ -266,18 +274,62 @@ nav a:hover{
     font-size: 40px;
 }
 
-#features button{
-    padding: 7px 30px;
-    color: white;
-    background-color: #9593e6;
-    font-weight: 800;
-    margin-top: 30px;
-}
-
 #features .col-33.card h2,#features .col-33.card h4{
     color: #9593e6;
     margin-bottom: 30px;
 }
+
+/* section about us */
+
+#about-us{
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+#about-us .row{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#about-us h2{
+    font-size: 40px;
+    color: #9593e6;
+    margin-bottom: 30px;
+}
+
+#about-us .col-60 p{
+    margin-bottom: 25px;
+}
+
+#about-us .col-40{
+    color: #9593e6;
+}
+
+#about-us .img-profile{
+    background-image: url(../img/about.jpg);
+}
+
+#about-us .content{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+#about-us .content .fa-quote-left{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 40px;
+}
+
+#about-us .col-40 p{
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 700;
+
+}
+
+
 
 /*******************
  tablet 
@@ -325,6 +377,21 @@ nav a:hover{
         width: calc(100% / 2 - 30px);
     }
 
+    /* section about us */
+
+    #about-us .row{
+        flex-direction: row;
+    }
+
+    #about-us .col-60{
+        width: calc(60% - 60px);
+        margin: 30px;
+    }
+
+    #about-us .col-40{
+        width: calc(40% - 60px);
+        margin: 30px;
+    }
 }
 
 /****************** 
